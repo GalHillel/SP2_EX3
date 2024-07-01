@@ -93,25 +93,17 @@ Handles the game logic for Catan.
     git clone <repository_url>
     cd catan_game
     ```
-3. Compile the project:
+3. Compile and run the project:
     ```sh
-    g++ -std=c++17 -o catan main.cpp player.cpp board.cpp catan.cpp
-    ```
-4. Run the executable:
-    ```sh
-    ./catan
+    make catan
     ```
 
 ## Unit Testing
 Unit tests are written using the Doctest framework. To run the tests:
 1. Ensure Doctest is included in your project.
-2. Compile the test files:
+2. Compile and run the test files:
     ```sh
-    g++ -std=c++17 -o test_player test_player.cpp player.cpp board.cpp catan.cpp -Ipath_to_doctest
-    ```
-3. Run the tests:
-    ```sh
-    ./test_player
+    make check
     ```
 
 ## File Structure
